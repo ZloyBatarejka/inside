@@ -1,3 +1,3 @@
-import { message } from './contants'
-import  './styles/styles.css'
-// document.body.innerHTML = message.toString()
+import  './styles/styles.scss'
+
+import './menu'

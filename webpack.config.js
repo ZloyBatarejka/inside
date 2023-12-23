@@ -15,7 +15,19 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
         exclude: /node_modules/,
       },
+      {
+        test: /\.s[ac]ss?$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
+        use: ['file-loader']
+      },
     ],
+  },
+  devServer: {
+    port: 4200
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],

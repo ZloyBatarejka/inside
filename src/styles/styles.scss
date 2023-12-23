@@ -1,0 +1,23 @@
+@import "~normalize.css";
+@import "vars.scss";
+@import "roboto.scss";
+
+@import "header.scss";
+@import "menu.scss";
+@import "about.scss";
+@import "contants.scss";
+@import "events.scss";
+
+html { 
+    font-size: 10px; 
+    scroll-behavior: smooth;
+    scroll-padding-top: 30.5rem;
+}
+
+body {
+    background: $primary;
+    color: $secondary;
+    box-sizing: border-box;
+    position: relative;
+}
+
