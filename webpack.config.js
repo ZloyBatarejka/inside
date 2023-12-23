@@ -27,7 +27,11 @@ module.exports = {
       {
         test: /\.(jpg|png)$/,
         type: 'asset/inline',
-    },
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader'
+      }
     ],
   },
   devServer: {

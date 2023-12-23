@@ -1,3 +1,3 @@
 import  './styles/styles.scss'
-import './assets/images/inside1.jpg'
+import './assets/images/inside4.jpg'
 import './menu'

@@ -1,8 +1,77 @@
 .about {
     width: 100%;
     height: 100rem;
-    background: blue;
-    background-image: url('../assets/images/inside4.jpg');
-    background-size: contain;
+    background: $primary;
+    padding: 21rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    &__image {
+        background-image: url("../assets/images/inside4.jpg");
+        background-size: cover;
+        background-position: right;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 40rem;
+        width: 35rem;
+        border: 1px solid $secondary;
+        animation-duration: 4s;
+        animation-name: shadow;
+        animation-iteration-count: infinite;
+    }
+
+    &__text {
+        padding-top: 5rem;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__call {
+        padding-top: 2rem;
+
+        button {
+            --b: 3px;   /* border thickness */
+            --s: .45em; /* size of the corner */
+            --color: #fffffa;
+            
+            padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+            color: var(--color);
+            --_p: var(--s);
+            width: 25rem;
+            background:
+                conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+                var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+
+            outline-offset: .6em;
+            font-size: 16px;
+            
+            border: 0;
+            
+            user-select: none;
+            -webkit-user-select: none;  
+            a {
+                display: block;
+                width: 100%;
+                height: 100% ;
+            }
+        }
+    }
+
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem $secondary;
+  }
+
+  50% {
+    box-shadow: none;
+  }
+
+  100% {
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem $secondary;
+  }
 }
