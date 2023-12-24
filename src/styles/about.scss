@@ -59,6 +59,33 @@
             }
         }
     }
+    .splide {
+      padding-top: 5rem;
+      width: 100%;
+      
+      &__slide {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &__slide.first {
+        background-image: url('../assets/images/girls1.jpg');
+      }
+
+      &__slide.second {
+        background-image: url('../assets/images/inside7.jpg');
+      }
+
+      &__slide.third {
+        background-image: url('../assets/images/girls2 (1).jpg');
+      }
+    }
+
 
 }
 
