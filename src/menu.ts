@@ -1,4 +1,4 @@
-const hamburgerIcon = document.querySelector('#nav-icon1')
+const hamburgerIcon = document.querySelector('#hamburger')
 const nav = document.querySelector('.nav')
 
 const toggle = () => {

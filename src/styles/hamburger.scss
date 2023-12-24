@@ -5,7 +5,7 @@
   
   /* Icon 1 */
   
-  #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  #hamburger, #nav-icon2, #nav-icon3, #nav-icon4 {
     width: 60px;
     height: 45px;
     position: relative;
@@ -21,7 +21,7 @@
     user-select: none;
   }
   
-  #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  #hamburger span, #nav-icon3 span, #nav-icon4 span {
     display: block;
     position: absolute;
     height: 9px;
@@ -40,19 +40,19 @@
     transition: .25s ease-in-out;
   }
   
-  #nav-icon1 span:nth-child(1) {
+  #hamburger span:nth-child(1) {
     top: 0px;
   }
   
-  #nav-icon1 span:nth-child(2) {
+  #hamburger span:nth-child(2) {
     top: 18px;
   }
   
-  #nav-icon1 span:nth-child(3) {
+  #hamburger span:nth-child(3) {
     top: 36px;
   }
   
-  #nav-icon1.open span:nth-child(1) {
+  #hamburger.open span:nth-child(1) {
     top: 18px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -60,12 +60,12 @@
     transform: rotate(135deg);
   }
   
-  #nav-icon1.open span:nth-child(2) {
+  #hamburger.open span:nth-child(2) {
     opacity: 0;
     left: -60px;
   }
   
-  #nav-icon1.open span:nth-child(3) {
+  #hamburger.open span:nth-child(3) {
     top: 18px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
