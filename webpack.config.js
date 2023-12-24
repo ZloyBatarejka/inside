@@ -21,16 +21,27 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(ttf|woff|woff2|eot)$/,
-        use: ['file-loader']
+        test: /\.(ttf|woff|woff2|eot|pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
       },
       {
         test: /\.(jpg|png)$/,
         type: 'asset/inline',
       },
       {
+        test: /\.pdf$/i,
+        type: 'asset/source'
+      },
+      {
         test: /\.html$/i,
-        loader: 'html-loader'
+        loader: 'html-loader',
       }
     ],
   },

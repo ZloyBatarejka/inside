@@ -1,5 +1,9 @@
 .events {
-    height: 100rem;
     width: 100%;
-    background-color: aqua;
+    background-color: $primary;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
